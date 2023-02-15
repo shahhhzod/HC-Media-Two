@@ -1,3 +1,58 @@
+@font-face {
+    font-family: "Roobert";
+    src: url("/fonts/Roobert-Bold.otf") format("otf"),
+    url("/fonts/Roobert-Bold.otf") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    }
+
+    @font-face {
+    font-family: "Roobert";
+    src: url("/fonts/Roobert-BoldItalic.otf") format("otf"),
+    url("/fonts/Roobert-BoldItalic.otf") format("otf");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+    }
+
+        @font-face {
+            font-family: "Roobert";
+            src: url("/fonts/Roobert-Heavy.otf") format("otf"),
+            url("/fonts/Roobert-Heavy.otf") format("woff");
+            font-weight: 600;
+            font-style: normal;
+            font-display: swap;
+            }
+
+            @font-face {
+                font-family: "Roobert";
+                src: url("/fonts/Roobert-Heavy.otf") format("otf"),
+                url("/fonts/Roobert-Heavy.otf") format("otf");
+                font-weight: 600;
+                font-style: normal;
+                font-display: swap;
+                }
+
+                @font-face {
+                    font-family: "Roobert";
+                    src: url("/fonts/Roobert-Light.otf") format("otf"),
+                    url("/fonts/Roobert-Light.otf") format("otf");
+                    font-weight: 500;
+                    font-style: normal;
+                    font-display: swap;
+                    }
+
+                    @font-face {
+                        font-family: "Roobert";
+                        src: url("/fonts/Roobert-Medium.otf") format("otf"),
+                        url("/fonts/Roobert-Medium.otf") format("woff");
+                        font-weight: 400;
+                        font-style: normal;
+                        font-display: swap;
+                        }
+                    
+
 .header {
     background-color: #E9E9EE;
     width: auto;
@@ -33,6 +88,14 @@ main {
     justify-content: center;
 }
 
+.brand-title {
+    font-family: 'Roobert';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+}
+
 .badge {
     --badge-width: 10px;
     position: absolute;
@@ -55,6 +118,9 @@ main {
     align-items: center;
     color: #555555;
     font-size: 17px;
+    font-family: 'Roobert';
+    font-style: normal;
+    font-weight: 400;
 }
 
 .brand-title {
@@ -120,6 +186,9 @@ main {
     background-color: #00296C;
     border: none;
     color: #ffffff;
+    font-family: 'Roobert';
+    font-style: normal;
+    font-weight: 400;
     margin-left: 20px;
 }
 
@@ -137,6 +206,7 @@ main {
 
 
 @media screen and (max-width: 800px)
+
 {
     .navbar {
         padding: 1 .1rem;
@@ -191,7 +261,9 @@ main {
   .footer-menu a {
    color: #F5F6FA;
    text-decoration: none;
-   margin: 15px;
+   font-family: 'Roobert';
+   font-style: normal;
+   font-weight: 400;
    font-size: 17px;
   }
 
@@ -199,4 +271,67 @@ main {
     color: #00296C;
     transition: 0.3s;
    }
+
+   .feedback-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feedback-form__field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.feedback-form__label {
+    font-size: 1.3rem;
+}
+.feedback-form__input {
+    border: 1px solid #ccc;
+    padding: 8px 10px; 
+}
+.feedback-form__button {
+    background: #2196f3; 
+    color: #fff; 
+    padding: 10px 20px; 
+    border: none; 
+    cursor: pointer; 
+}
+@media (max-width: 768px) {
+    .feedback-form {
+        width: 100%; 
+        padding: 0 20px; 
+        box-sizing: border-box; 
+        text-align: center; 
+    }
+    .feedback-form__field {
+        width: 100%; 
+        margin-top: 15px; 
+        text-align: left; 
+    }
+    .feedback-form__input { 
+        width: 100%; 
+        margin-top: 5px; 
+        padding: 10px 0; 
+    }
+     .feedback-form__button { 
+         width: 100%; 
+         margin-top: 15px;  
+     }
+}   
  
+
+   @media screen and (max-width: 800px)
+{
+    .container-fluid {
+     width: auto;
+     height: 500px !important;  
+    }
+    .footer-menu {
+        margin-top: 20px;
+    }
+
+    .contact-footer {
+        margin-top: 20px;
+    }
+}
