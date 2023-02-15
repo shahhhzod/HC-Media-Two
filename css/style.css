@@ -38,9 +38,8 @@ main {
     position: absolute;
     top: 12px;
     right: 5px;
-    width: var(--badge-width);
+    width: var(--badge-width);  
     height: var(--badge-width);
-    background-color: red;
     border-radius: calc(var(--badge-width) / 2);
     text-align: center;
     color: #ffffff;     
@@ -50,6 +49,7 @@ main {
 .navbar {
     padding: 0 2rem;
     display: flex;
+    background-color: #E9E9EE;
     position: relative;
     justify-content: space-between;
     align-items: center;
@@ -100,6 +100,7 @@ main {
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
+    margin-top: 10px;
     height: 21px;
 }
 
@@ -107,7 +108,7 @@ main {
     отдельные линии кнопки
  */
 .toggle-button .bar {
-    height: 3px;
+    height: 2px;
     width: 100%;
     background-color: #555555;
     border-radius: 10px;
@@ -138,7 +139,9 @@ main {
 @media screen and (max-width: 800px)
 {
     .navbar {
-        padding: 0 .1rem;
+        padding: 1 .1rem;
+        width: auto;
+        border-radius: 5px;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -167,6 +170,11 @@ main {
 
     .navbar-links.active {
         display: flex;
+    }
+    .navbar-links button {
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 20px;
     }
 }
 
