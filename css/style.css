@@ -1,0 +1,194 @@
+.header {
+    background-color: #E9E9EE;
+    width: auto;
+    height: 75px;
+}
+
+/* .container {
+    margin-top: 15px;
+} */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    color: #555555;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge {
+    --badge-width: 10px;
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    width: var(--badge-width);
+    height: var(--badge-width);
+    background-color: red;
+    border-radius: calc(var(--badge-width) / 2);
+    text-align: center;
+    color: #ffffff;     
+    transform: scale(.7);
+}
+
+.navbar {
+    padding: 0 2rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    color: #555555;
+    font-size: 17px;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: #555555;
+    padding: 1rem;
+}
+
+.navbar-links li a:hover {
+    color: #00296C;
+    transition: 0.3s;
+}
+
+/**
+    кнопка гамбургер меню
+ */
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+/**
+    отдельные линии кнопки
+ */
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: #555555;
+    border-radius: 10px;
+}
+
+.navbar-links button {
+    width: 188px;
+    height: 50px;
+    background-color: #00296C;
+    border: none;
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+
+.navbar-links button:hover {
+    background-color: #00183E;
+    transition: 1s;
+}
+
+
+/**
+    для устройств с размером экрана меньше 800px
+    отображаем гамбургер меню
+ */
+
+
+@media screen and (max-width: 800px)
+{
+    .navbar {
+        padding: 0 .1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+  .footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .footer-menu li {
+    margin-right: 10px;
+  }
+
+  .footer-menu a {
+   color: #F5F6FA;
+   text-decoration: none;
+   margin: 15px;
+   font-size: 17px;
+  }
+
+  .footer-menu a:hover {
+    color: #00296C;
+    transition: 0.3s;
+   }
+ 
