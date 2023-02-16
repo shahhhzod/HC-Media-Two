@@ -274,9 +274,9 @@ main {
 
    .feedback-form {
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 .feedback-form__field {
     display: flex;
@@ -284,35 +284,92 @@ main {
     margin-top: 10px;
 }
 .feedback-form__label {
-    font-size: 1.3rem;
+    font-family: 'Roobert';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    font-style: normal;
+    color: #323236;
+    padding-bottom: 8px;
 }
 .feedback-form__input {
-    border: 1px solid #ccc;
+    width: 625px;
+    border: 1px solid #D2D2D8;  
     padding: 8px 10px; 
 }
+
+
+.message_form {
+  width: 625px;
+  border: 1px solid #D2D2D8;  
+  padding: 8px 10px;
+}
+
 .feedback-form__button {
-    background: #2196f3; 
+    background: #00296C;
     color: #fff; 
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 130%;
+    font-family: 'Roobert';
+    margin-top: 20px;
+    width: 625px;
+    height: 50px;
     padding: 10px 20px; 
     border: none; 
     cursor: pointer; 
 }
+
+
+.feedback-form__button:hover {
+    background-color: #00183E;
+    transition: 0.8s;
+}
+
+.background-left {
+    float: right;
+    margin-top: 80px;
+}
+
+
+.title_contact {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    font-family: 'Roobert';
+}
+
+
 @media (max-width: 768px) {
     .feedback-form {
         width: 100%; 
-        padding: 0 20px; 
+        padding: 10 20px;
+        height: 100%; 
         box-sizing: border-box; 
         text-align: center; 
     }
+
+    .message_form {
+        width: 100%;
+        margin-top: 5px; 
+        padding: 10px 8;
+      }
+
+      .background-left {
+        display: none;
+      }
+
     .feedback-form__field {
         width: 100%; 
+        font-size: 14px;
         margin-top: 15px; 
         text-align: left; 
     }
     .feedback-form__input { 
         width: 100%; 
         margin-top: 5px; 
-        padding: 10px 0; 
+        padding: 10px 8; 
     }
      .feedback-form__button { 
          width: 100%; 
