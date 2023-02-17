@@ -36,8 +36,8 @@
 
                 @font-face {
                     font-family: "Roobert";
-                    src: url("/fonts/Roobert-Light.otf") format("otf"),
-                    url("/fonts/Roobert-Light.otf") format("otf");
+                    src: url("/fonts/Roobert-Regular.otf") format("otf"),
+                    url("/fonts/Roobert-Regular.otf") format("woff");
                     font-weight: 500;
                     font-style: normal;
                     font-display: swap;
@@ -51,6 +51,7 @@
                         font-style: normal;
                         font-display: swap;
                         }
+                        
                     
 
 .header {
@@ -359,7 +360,7 @@ main {
       .background-left {
         display: none;
       }
-
+      
     .feedback-form__field {
         width: 100%; 
         font-size: 14px;
@@ -392,3 +393,54 @@ main {
         margin-top: 20px;
     }
 }
+
+
+.main_page {
+    width: auto;
+    background-color: #E9E9EE;
+}
+
+.title_page {
+    font-style: normal;
+    font-weight: 400;
+    margin-top: 70px;
+    font-size: 96px;
+    font-family: 'Roobert';
+    color: #323236;
+}
+
+.title_scroll {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    font-family: 'Roobert';
+    color: #8E8F96;
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    margin-right: auto;
+}
+
+.img_page_mobile {
+    display: none;
+} 
+
+@media screen and (max-width: 800px)
+{
+    .page_hr {
+     display: none;  
+    }
+
+    .title_page {
+        font-size: 50px;
+    }
+
+    .img_page img {
+      display: none;
+    }
+
+    .img_page_mobile {
+        display: block;
+        margin-top: 50px;
+    }
+}
+
