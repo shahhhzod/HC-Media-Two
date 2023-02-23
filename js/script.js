@@ -8,3 +8,14 @@
     toggleButton.addEventListener('click', () => navbarLinks.classList.toggle('active'))
 
 }()
+
+// Loader JS HC - Media 
+
+let mask = document.querySelector('.mask');
+
+window.addEventListener('load', () => {
+    mask.classList.add('hide');
+    setTimeout(() => {
+        mask.remove();
+    }, 600);
+});
